@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Multi-step form</title>
+</head>
+<body>
+
+  <div class="container">
+
+    <section class="steps-section">
+      <div class="first-step-container step">
+        <button class="1st-step-btn step-btn">1</button>
+        <div class="step-text">
+          <p>STEP 1</p>
+          <h3>YOUR INFO</h3>
+        </div>
+      </div>
+      <div class="second-step-container step">
+        <button class="2nd-step-btn step-btn">2</button>
+        <div class="step-text">
+          <p>STEP 2</p>
+          <h3>SELECT PLAN</h3>
+        </div>
+      </div>
+      <div class="third-step-container step">
+        <button class="3rd-step-btn step-btn">3</button>
+        <div class="step-text">
+          <p>STEP 3</p>
+          <h3>ADD-ONS</h3>
+        </div>
+      </div>
+      <div class="fourth-step-container step">
+        <button class="4th-step-btn step-btn">4</button>
+        <div class="step-text">
+          <p>STEP 4</p>
+          <h3>SUMMARY</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="first-section section">
+      <div class="section-inner-container">
+        <header class="section-header">
+          <h1 class="section-title">Personal Info</h1>
+          <p class="default-p">Please provide your name, email address, and phone number.</p>
+        </header>
+        <form id="first-section-form">
+          <div class="input-container">
+            <label class="label" for="name">Name</label>
+            <input class="input" placeholder="Insert your name" required id="first-section-name-input" type="text" name="name">
+          </div>
+          <div class="input-container">
+            <label class="label" for="email">Email Address</label>
+            <input class="input" placeholder="Insert your email" required type="email" name="email" id="first-section-email-input">
+          </div>
+          <div class="input-container">
+            <label class="label" for="phone">Phone number</label>
+            <input class="input" required placeholder="e.g +1 234 567 890"type="tel" name="tel" id="first-section-tel-input">
+          </div>
+        </form>
+        <div class="back-next-btn-container">
+          <button type="submit" class="first-section-next-btn next-btn">Next step</button>
+        </div>
+      </div>
+    </section>
+    <section class="second-section hidden section">
+      <div class="section-inner-container">
+        <header class="section-header">
+          <h1 class="section-title">Select your plan</h1>
+          <p class="default-p">You have the option of monthly or yearly billing.</p>
+        </header>
+        <div class="second-section-plans">
+          <div class="plan-card plan-card-1">
+            <img class="plan-icon" src="assets/images/icon-arcade.svg" alt="">
+            <div class="plan-card-text">
+              <h4 class="plan-card-title">Arcade</h4>
+              <p class="default-p">$9/mo</p>
+              <p class="yearly-discount active">2 months free</p>
+            </div>
+          </div>
+          <div class="plan-card plan-card-2">
+            <img class="plan-icon" src="assets/images/icon-advanced.svg" alt="">
+            <div class="plan-card-text">
+              <h4 class="plan-card-title">Advanced</h4>
+              <p class="default-p">$12/mo</p>
+              <p class="yearly-discount active">2 months free</p>
+            </div>
+          </div>
+          <div class="plan-card plan-card-3">
+            <img class="plan-icon" src="assets/images/icon-pro.svg" alt="">
+            <div class="plan-card-text">
+              <h4 class="plan-card-title">Pro</h4>
+              <p class="default-p">$15/mo</p>
+              <p class="yearly-discount active">2 months free</p>
+            </div>
+          </div>
+        </div>
+        <div class="monthly-yearly-toggle">
+          <p class="monthly default-p active">Monthly</p>
+          <div class="toggle">
+            <div class="toggle-inner"></div>
+          </div>
+          <p class="yearly default-p">Yearly</p>
+        </div>
+        <div class="back-next-btn-container">
+          <button type="button" class="second-section-back-btn back-btn">Go back</button>
+          <button type="submit" class="second-section-next-btn next-btn">Next step</button>
+        </div>
+      </div>
+    </section>
+    <section class="third-section section hidden">
+      <div class="section-inner-container">
+        <header class="section-header">
+          <h1 class="section-title">Pick add-ons</h1>
+          <p class="default-p">Add-ons help enhance your gaming experience</p>
+        </header>
+        <div class="third-section-add-ons-container">
+          <div class="add-ons-card add-on1">
+            <input class="checkbox" type="checkbox" name="checkbox" id="checkbox">
+            <div class="add-ons-card-text">
+              <h5 class="add-ons-card-title">Online service</h5>
+              <p class="default-p">Access to multiplayer games</p>
+            </div>
+            <h4 class="add-ons-card-price">+$1/mo</h4>
+          </div>
+          <div class="add-ons-card add-on2">
+            <input class="checkbox" type="checkbox" name="checkbox" id="checkbox">
+            <div class="add-ons-card-text">
+              <h5 class="add-ons-card-title">Larger Storage</h5>
+              <p class="default-p">Extra 1TB of cloud save</p>
+            </div>
+            <h4 class="add-ons-card-price">+$2/mo</h4>
+          </div>
+          <div class="add-ons-card add-on3">
+            <input class="checkbox" type="checkbox" name="checkbox" id="checkbox">
+            <div class="add-ons-card-text">
+              <h5 class="add-ons-card-title">Customizable Profile</h5>
+              <p class="default-p">Custom theme on your profile</p>
+            </div>
+            <h4 class="add-ons-card-price">+$2/mo</h4>
+          </div>
+        </div>
+        <div class="back-next-btn-container">
+          <button type="button" class="third-section-back-btn back-btn">Go back</button>
+          <button type="submit" class="third-section-next-btn next-btn">Next step</button>
+        </div>
+      </div>
+    </section>
+    <section class="fourth-section section hidden">
+      <div class="section-inner-container">
+        <header class="section-header">
+          <h1 class="section-title">Finishing up</h1>
+          <p class="default-p">Double-check everything looks OK before confirming.</p>
+        </header>
+        <div class="selected-options-container">
+          <div class="selected-plan">
+            <div class="selected-plan-inner">
+              <h5 class="selected-plan-title"></h5>
+              <a class="change-plan">Change</a>
+            </div>
+            <h5 class="selected-plan-price"></h5>
+          </div>
+          <div class="selected-add-ons">
+
+          </div>
+        </div>
+        <div class="total">
+          <h4 class="total-cost-title"></h4>
+          <h3 class="total-cost"></h3>
+        </div>
+        <div class="back-next-btn-container">
+          <button type="button" class="fourth-section-back-btn back-btn">Go back</button>
+          <button type="submit" class="conclude-btn">Confirm</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="last-section section hidden">
+      <div class="section-inner-container last-container">
+        <img class="thank-you-img" src="assets/images/icon-thank-you.svg" alt="">
+        <h2 class="thank-you">Thank you!  </h2>
+        <p class="thank-you-msg">Thanks for confirming your subscription! We hope you have fun using our platform!. If you ever
+          need support, please feel free to email us at support@loremgaming.com.
+        </p>
+      </div>
+    </section>
+  </div>
+
+</body>
+<script src="script.js"></script>
+</html>
+
+
+ 
